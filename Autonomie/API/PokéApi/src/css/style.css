@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, #1368e7, #68dceb);
+}
+#card{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 200px;
+    padding: 50px;
+    transition: ease 80ms;
+    text-align: center;
+}
+#card:hover{
+    transform: translateY(-20px);
+}
+#card:active {
+    transform: translateY(20px);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exposition de sculptures</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="photos/logo.png">
+    </head>
+    <body>
+        <header>
+            <nav>
+              <!------ BarNav ------->
+              <img class="oursNav"src="photos/mini_logo.png" alt="ours logo">
+              <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Artiste.html">Artiste</a></li>
+                <li><a href="Expo.html">Expo</a></li>
+                <li><a class="pageAct"href="Contact.html">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <!----- Formulaire ----->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" required>
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" required></textarea>
+              <input type="submit" value="Envoyer">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; Bassompierre. Tous droits réservés.</p>
+        </footer>
+    </body>
+</html>

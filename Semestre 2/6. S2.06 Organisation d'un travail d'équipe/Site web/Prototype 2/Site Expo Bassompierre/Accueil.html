@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exposition de sculptures</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<script>
+window.addEventListener('scroll', function() {
+  var sidebar = document.getElementById('sidebar');
+  var stopScrollPosition = 2500; // Ajustez cette valeur pour définir le point d'arrêt du suivi du défilement
+
+  if (window.pageYOffset > stopScrollPosition) {
+    sidebar.classList.add('sidebar-hidden'); // Ajoute une classe pour démarrer l'animation
+  } else {
+    sidebar.classList.remove('sidebar-hidden'); // Supprime la classe pour annuler l'animation
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var sidebar = document.getElementById('sidebar2');
+  var stopScrollPosition = 2500; // Ajustez cette valeur pour définir le point d'arrêt du suivi du défilement
+});
+</script>
+<style>
+/* Réinitialisation des styles */
+
+/* Ajoutez les styles personnalisés ci-dessous */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  background-image: url("1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+
+h4{
+color:black;
+font-size: 150%;}
+
+
+header {
+  background-color: #222;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+.chrono{
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color:white;
+  background-size: 100%;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 20%;
+  text-align: center;
+}
+.sculpture {
+ 
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color:white;
+  background-size: 50%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 50%;
+}
+.artiste{
+
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color:white;
+  background-size: 50%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 50%;
+}
+
+
+.artiste:hover, .sculpture:hover, .chrono:hover {
+  transform: translateY(-10px);
+}
+
+.artiste img, .sculpture img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #222;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: Jost;
+
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #1f1f1f;
+  border-radius: 5px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important; 
+ margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-content h3{color:white;}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(326deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);;
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(326deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+#sidebar {
+  position: fixed;
+  top: 50;
+  right:0;
+  width: 20%; /* Ajustez la largeur selon vos besoins */
+  height: 27vh; /* Ajustez la hauteur selon vos besoins */
+  background-color: #ddd; /* Couleur de fond du div */
+  overflow-y: auto; /* Permet de faire défiler le contenu si nécessaire */
+  border: 1px;
+  border-radius: 10px;
+  background-image: url("3.jpg");
+  background-size:130%;
+  color:white;
+  margin: 10%;
+  padding-left: 3%;
+  transition: opacity 0.3s ease; /* Ajoute une transition pour la propriété opacity */
+}
+
+.sidebar-hidden {
+  opacity: 0; /* Réduit l'opacité du div pour le faire disparaître */
+}
+
+#sidebar2 {
+  position: fixed;
+  bottom:0;
+  padding-left: 95%;
+  overflow-y: auto; /* Permet de faire défiler le contenu si nécessaire */
+  transition: opacity 0.3s ease; /* Ajoute une transition pour la propriété opacity */
+  display: inline-block;
+}
+
+a {
+text-decoration: none; 
+color:white
+}
+
+#sidebar, h1
+{
+font-size:200%;
+font-family:Jost;
+color:white;
+}
+
+
+</style>
+
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="Artiste.html">Artistes</a></li>
+        <li><a href="Expo.html">Expo</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="accueil">
+    <h1>Michel Bassompierre</h1>
+    <p>EXPOSITION 2023</p>
+  </section>
+<div id="sidebar">
+  <h1>EXPO 2024<h1>
+   <a href="Expo.html">En savoir plus</a>
+</div>
+<div id="sidebar2">
+<img src="11.png" alt="bear" width=90%>
+</div>
+  <section id="artistes">
+<div class="chrono">
+       <h2>L'artiste</h2>
+
+</div>
+
+    <div class="artiste">
+      <h3>Michel Bassompierre</h3>
+     <img src="2.jpg" alt="Artiste">
+      <p>Michel Bassompierre naît le 22 mars 1948 à Paris d'une mère artiste1 et d'un père ingénieur hydrogéologue au BRGM2.
+
+Dès son plus jeune âge, il passe des journées entières à dessiner et modeler les animaux qu'il a observés au zoo de Vincennes, à la ménagerie du Jardin des Plantes et dans la grande galerie de l'Évolution du Muséum national d'histoire naturelle.</p>
+    </div>
+    <!-- Ajouter d'autres artistes si nécessaire -->
+  </section>
+
+  <section id="galerie">
+<div class="chrono">
+   <h2>Galerie</h2>
+
+</div>
+    <div class="sculpture">
+      <img src="6.jpg" alt="Sculpture 1">
+      <h3>Nom de la sculpture 1</h3>
+      <p>Description de la sculpture 1</p>
+    </div>
+    <div class="sculpture">
+      <img src="5.jpg" alt="Sculpture 2">
+      <h3>Nom de la sculpture 2</h3>
+      <p>Description de la sculpture 2</p>
+    </div>
+    <!-- Ajouter d'autres sculptures si nécessaire -->
+  </section>
+
+
+<div class="chrono">
+ <h4>Chronologie</h4>
+
+</div>
+
+<style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');</style>
+
+<section class="design-section">
+<div class="timeline">
+                  <div class="timeline-empty">
+                  </div>
+
+
+               <div class="timeline-middle">
+                   <div class="timeline-circle"></div>
+               </div>
+               <div class="timeline-component timeline-content">
+                <h3>Date 1</h3>
+
+           </div>
+                <div class="timeline-component timeline-content">
+                         <h3>Date 2</h3>
+                         
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+
+                <div class="timeline-empty">
+                </div>
+
+               <div class="timeline-middle">
+                   <div class="timeline-circle"></div>
+               </div>
+               <div class=" timeline-component timeline-content">
+                <h3>Date 3</h3>
+
+
+           </div>
+
+       </div>
+    </div> 
+</section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" required></textarea>
+      <input type="submit" value="Envoyer">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; Bassompierre. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
