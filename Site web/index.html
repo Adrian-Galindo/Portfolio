@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Galindo Adrian</title>
+    <meta name="title" content="Galindo Adrian" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 onclick="topFunction()" id="logo" style="cursor: pointer;">
+            Galindo Adrian
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#projects">À propos</a></li>
+            <li><a class="nav-link" href="#apropos">Experience</a></li>
+            <li><a class="nav-link" href="#competences">Compétences</a></li>
+            <li class="nav-link btn btn-primary" style="display: flex; justify-content: center;">
+              <i class='bx bx-phone' style="font-size: 20px;"></i>06 14 46 12 22
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="header-container">
+        <img
+          class="profile-image"
+          src="assets/img/moi.jpg"
+          alt=""
+        />
+
+        <div class="content-text">
+          <h2>Hello world ! Me llamo Adrian</h2>
+          <p>
+            Je suis étudiant en 2e année de BUT Informatique à l'université Sorbonne Paris Nord. 
+            Passionné par le développement web et la programmation en général.
+          </p>
+        </div>
+
+        <!-- liens réseaux -->
+        <div class="lienButton">
+          <a
+          href="https://github.com/Adrian-Galindo"
+          class="btn btn-secondary"
+          target="_blank">
+          <i class='bx bxl-github' style="font-size: 40px;"></i>
+          </a>
+          <a
+            href="www.linkedin.com/in/adrian-galindo-51599b27a"
+            class="btn btn-secondary"
+            target="_blank">
+            <i class='bx bxl-linkedin' style="font-size: 40px;"></i>
+          </a>
+          <a
+            href="mailto:galindo.adrian308@gmail.com"
+            class="btn btn-secondary"
+            target="_blank">
+            <i class='bx bx-envelope' style="font-size: 40px;"></i>
+          </a>
+          <a
+            href="assets/GALINDO Adrian CV.pdf"
+            class="btn btn-secondary"
+            target="_blank"
+            style="font-size: x-large;"
+            download>
+            Mon CV
+            <i class='bx bx-download'></i>
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      
+      <!-- A propos--> 
+      <div class="division"></div>
+      <div class="content-text" id="apropos">
+        <h2>À propos</h2>
+        <p>Né en 2003, j'ai découvert l'informatique en regardant des 
+          films sur les hackers et en jouant à des jeux vidéo. Inspiré 
+          par ces œuvres, j'ai d'abord voulu suivre cette voie, mais j'ai 
+          finalement trouvé ma passion dans le développement front-end. 
+          Ce domaine me permet d'exploiter pleinement ma créativité. Pour approfondir 
+          mes compétences, j'ai suivi une formation en informatique au sein du BUT 
+          Informatique de l'IUT de Sorbonne Paris Nord. Actuellement, je suis à la recherche d'un contrat d'apprentissage</p>
+      </div>
+      <div class="division"></div>
+
+      <!-- Experience -->
+      <div class="content-text" id="Experience">
+        <h2>Experience</h2>
+      </div>
+      <article class="project">
+          <!-- Exp1 -->
+          <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Projet universitaire - Audit - 2024 </h3>
+              <p> 
+                Nous, une équipe de cinq personnes, avons mené une analyse approfondie du site web d'un autre groupe, 
+                développé en PHP, SQL, JavaScript, HTML et CSS. Nous avons détecté 
+                et rectifié les problèmes existants, et intégré de nouvelles fonctionnalités 
+                pour optimiser son efficacité et améliorer l'expérience utilisateur. En complément, 
+                nous avons également créé une bande dessinée illustrant notre projet, ce qui nous a 
+                permis de mettre à profit notre créativité et nos compétences en rédaction.</p>
+            </div>
+            <div class="project-link">
+              <a href="assets/project/Basmos BD.pdf" target="_blank" download><i class='bx bx-download'></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Exp2 -->
+        <div class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Stage - Développeur FullStack - 2024</h3>
+              <p>
+                Chez PERFORM VISION TRAINING & CONSULTING, j'ai eu l'opportunité d'analyser 
+                plusieurs sites existants afin de concevoir et développer un nouveau site web intégrant les meilleures 
+                pratiques observées. Ce projet visait à offrir la possibilité de trouver facilement le formateur qui vous correspond. 
+                Les fonctionnalités clés incluaient l'inscription et la connexion des utilisateurs, 
+                un système avancé de recherche de formateurs, ainsi qu'une interface de
+                 messagerie client/formateur. Ce travail m'a permis de combiner analyse 
+                 approfondie et créativité dans la conception d'une solution web robuste et adaptée aux besoins spécifiques de l'entreprise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="division"></div>
+
+      <!-- Skills -->
+      <!-- Skills -->
+      <div class="content-text" id="competences">
+        <h2>Compétences</h2>
+        <div class="lienButton">
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="HTML">
+              <i class='bx bxl-html5' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">HTML</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="CSS">
+              <i class='bx bxl-css3' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">CSS</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="JavaScript">
+              <i class='bx bxl-javascript' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">JavaScript</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="Vue.js">
+              <i class='bx bxl-vuejs' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">Vue.js (Début)</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="Java">
+              <i class='bx bxl-java' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">Java</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="Python">
+              <i class='bx bxl-python' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">Python</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="PHP">
+              <i class='bx bxl-php' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">PHP</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="Node.js">
+              <i class='bx bxl-nodejs' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">Node.js (Début)</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="PostgreSQL">
+              <i class='bx bxl-postgresql' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">PostgreSQL</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="Terminal">
+              <i class='bx bx-terminal' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">Linux</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="Visual Studio Code">
+              <i class='bx bxl-visual-studio' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">Visual Studio Code</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="GIT">
+              <i class='bx bxl-git' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">GIT</span>
+          </div>
+          
+          <div class="skill-item">
+            <a class="btn btn-secondary" title="Android Studio">
+              <i class='bx bxl-android' style="font-size: 40px;"></i>
+            </a>
+            <span class="skill-text">Android Studio (Début)</span>
+          </div>
+          
+        </div>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Remonter en haut de la page"><i class='bx bxs-up-arrow-circle' style="font-size: xx-large;"></i></button>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:galindo.adrian308@gmail.com">galindo.adrian308@gmail.com</a>
+        <!-- Social links -->
+        <div class="social">
+          <a href="www.linkedin.com/in/adrian-galindo-51599b27a" target="_blank"
+            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="https://github.com/Adrian-Galindo" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <!-- Attribution -->
+        <p><span id="datee"></span> Galindo Adrian</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
